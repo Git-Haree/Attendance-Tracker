@@ -4,9 +4,7 @@
  */
 
 // ── API Configuration ─────────────────────────────────────────
-const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-  ? `http://localhost:3000/api`
-  : `/api`;
+const API_BASE = "https://attendance-tracker-2g8k.onrender.com/api";
 
 // ── Theme Management ──────────────────────────────────────────
 const ThemeManager = {
@@ -106,8 +104,8 @@ const Toast = {
   },
 
   success(msg) { this.show(msg, 'success'); },
-  error(msg)   { this.show(msg, 'error'); },
-  info(msg)    { this.show(msg, 'info'); }
+  error(msg) { this.show(msg, 'error'); },
+  info(msg) { this.show(msg, 'info'); }
 };
 
 // ── Fetch Helpers ─────────────────────────────────────────────
